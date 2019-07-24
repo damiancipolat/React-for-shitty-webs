@@ -120,5 +120,5 @@ I know, process react + babel + sass when the web is loading, is'nt the good sol
 ## Boiler plate:
 Take a look of the folder basic and examples with some code ready to be used.
 
-- **Basic**:    dsadsadsad sadsadsasasad
-- **Examples**: sdfdsfd sdfsdfsdfsdfdsf
+- **Basic**: React + babel + sass + base layout of a website.
+- **Examples**: React + babel + sass + componentes examples.
