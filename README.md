@@ -2,7 +2,7 @@
 
 I know the mix of current technologies with old ones is not always synonymous with success but in some scenarios of freelance projects it can be the difference of maintaining a commercial relationship with a client without suffering as a developer.
 
-This repository comes out of my experience of a project working with **PHP + Wordpress + Goddady** (only access via FTP and Cpanel).
+This repository comes out of my experience of a project working with **PHP + Wordpress + Goddady** (only access via FTP and Cpanel XO).
 
 <img src="https://github.com/damiancipolat/React-for-shitty-webs/blob/master/doc/popo2.png?raw=true" width="180px" align="right" />
 
@@ -60,7 +60,7 @@ Basically this is part of the solution.
 </html>
 ```
 
-**2) JS**
+**2) JS REACT**
 ```javascript
 class Hello extends React.Component {
     
@@ -113,3 +113,9 @@ ReactDOM.render(<Hello/>, document.getElementById("root"));
 
 }
 ```
+
+## Blockquotes
+> I know, process react + babel + sass when the web is loading, is'nt the good solutions, but is one aproach to modernize a old project. If is possible is a good idea to have to transpile process and load a bundle.js file.
+
+## Boiler plate:
+Take a look of the folder basic and examples with some code ready to be used.
