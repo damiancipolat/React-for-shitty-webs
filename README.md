@@ -4,7 +4,7 @@ I know the mix of current technologies with old ones is not always synonymous wi
 
 This repository comes out of my experience of a project working with **PHP + Wordpress + Goddady** (only access via FTP and Cpanel).
 
-<img src="https://github.com/damiancipolat/JS-Dynamic-type-validation/blob/master/doc/fish_2.png?raw=true" width="180px" align="right" />
+<img src="https://github.com/damiancipolat/React-for-shitty-webs/blob/master/doc/popo2.png?raw=true" width="180px" align="right" />
 
 ### Solution:
 After researching I found a good combination of options. Wordpress Headless and React included as script.
