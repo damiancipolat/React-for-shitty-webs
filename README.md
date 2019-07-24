@@ -17,9 +17,9 @@ It is to use the API-REST included in Wordpress and use this software only CMS, 
 - https://www.elegantthemes.com/blog/wordpress/headless-wordpress
 
 ## CODE:
-Basicly this is part or the solution
+Basically this is part or the solution.
 
-**HTML**
+**1) HTML**
 ```html
 <!DOCTYPE html>
 <html>
@@ -60,8 +60,7 @@ Basicly this is part or the solution
 </html>
 ```
 
-
-**JS**
+**2) JS**
 ```javascript
 class Hello extends React.Component {
     
@@ -99,4 +98,18 @@ class Hello extends React.Component {
 }
 
 ReactDOM.render(<Hello/>, document.getElementById("root"));
+```
+
+**3) SCSS**
+```css
+.rojo{
+	background:red;
+	color:white;
+
+	.verde{
+		background:green;
+		color:white;
+	}
+
+}
 ```
