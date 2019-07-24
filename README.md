@@ -4,6 +4,8 @@ I know the mix of current technologies with old ones is not always synonymous wi
 
 This repository comes out of my experience of a project working with **PHP + Wordpress + Goddady** (only access via FTP and Cpanel).
 
+<a href="https://www.npmjs.com/package/fish-type-js"><img src="https://nodei.co/npm/fish-type-js.png?downloads=true"></a>
+
 ### Solution:
 After researching I found a good combination of options. Wordpress Headless and React included as script.
 
