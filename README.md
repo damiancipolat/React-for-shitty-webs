@@ -15,3 +15,88 @@ It is to use the API-REST included in Wordpress and use this software only CMS, 
 - https://www.sitepoint.com/wordpress-headless-cms/
 - https://www.smashingmagazine.com/2018/10/headless-wordpress-decoupled/
 - https://www.elegantthemes.com/blog/wordpress/headless-wordpress
+
+## CODE:
+Basicly this is part or the solution
+
+**HTML**
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Title-->
+    <title>Hello World</title>
+    <!--React + React-Dom + Babel-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <!--SASS-->    
+    <link rel="stylesheet/scss" type="text/css" href="style.scss"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
+    <!--Sass loader-->
+    <script>
+      (async () => {
+        const compiled = (await Promise.all(
+          [...document.querySelectorAll("link")]
+            .filter(l => l.rel === 'stylesheet/scss')
+            .map(async l => {
+              url = l.href;
+              const code = await (await fetch(url)).text();
+              const basename = url.substring(url.lastIndexOf("/")+1);
+              Sass.writeFile(basename, code);
+              return Sass.compile(`@import "${basename}"; `);
+            })
+        )).join("\n");
+        document.head.innerHTML += `<style>${compiled}</style>`;
+        console.log(compiled);
+      })();
+    </script>        
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="home.js"></script>
+  </body>
+</html>
+```
+
+
+**JS**
+```javascript
+class Hello extends React.Component {
+    
+  constructor(){
+    super();
+    this.state = {
+      message: "my friend (from state)!"
+    };
+    this.updateMessage = this.updateMessage.bind(this);
+  }
+
+  updateMessage() {
+    this.setState({message: "my friend (from changed state)!"});
+  }
+  
+  render() {
+
+     return (
+       <div>
+         <h1>Hello {this.state.message}!</h1>
+         <div className="rojo">
+            Hello, world!
+            <div className="verde">
+              01010101101
+            </div>
+         </div>
+         <div>
+            <button onClick={this.updateMessage}>Click me!</button>
+         </div>
+       </div>
+    );
+
+  }
+
+}
+
+ReactDOM.render(<Hello/>, document.getElementById("root"));
+```
