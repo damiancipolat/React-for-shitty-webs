@@ -17,7 +17,7 @@ It is to use the API-REST included in Wordpress and use this software only CMS, 
 - https://www.elegantthemes.com/blog/wordpress/headless-wordpress
 
 ## CODE:
-Basically this is part or the solution.
+Basically this is part of the solution.
 
 **1) HTML**
 ```html
