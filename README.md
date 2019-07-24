@@ -117,7 +117,7 @@ ReactDOM.render(<Hello/>, document.getElementById("root"));
 ## Blockquotes
 I know, process react + babel + sass when the web is loading, is'nt the good solutions, but is one aproach to modernize a old project. If is possible is a good idea to have to transpile process and load a bundle.js file.
 
-## Boiler plate:
+## Folders:
 Take a look of the folder basic and examples with some code ready to be used.
 
 - **Basic**: React + babel + sass + base layout of a website.
