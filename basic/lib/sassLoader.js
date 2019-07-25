@@ -1,15 +1,15 @@
 (async () => {
-  const compiled = (await Promise.all(
-    [...document.querySelectorAll("link")]
-      .filter(l => l.rel === 'stylesheet/scss')
-      .map(async l => {
-        url = l.href;
-        const code = await (await fetch(url)).text();
-        const basename = url.substring(url.lastIndexOf("/")+1);
-        Sass.writeFile(basename, code);
-        return Sass.compile(`@import "${basename}"; `);
-      })
-  )).join("\n");
+  
+  let buffer='';
+  
+  const fullCode = (await Promise.all([...document.querySelectorAll("link")]
+    .filter(l => l.rel === 'stylesheet/scss')
+    .map(async l=> await (await fetch(l.href)).text()))).join("\n");
+
+  const basename = 'tmp.scss';
+  Sass.writeFile(basename, fullCode);
+  const compiled = await Sass.compile(`@import "${basename}";`);
+
   document.head.innerHTML += `<style>${compiled}</style>`;
-  //console.log(compiled);
+
 })();
