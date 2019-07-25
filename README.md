@@ -7,7 +7,7 @@ This repository comes out of my experience of a project working with **PHP + Wor
 <img src="https://github.com/damiancipolat/React-for-shitty-webs/blob/master/doc/popo2.png?raw=true" width="180px" align="right" />
 
 ### Solution:
-After researching I found a good combination of options. Wordpress Headless and React included as script.
+After researching I found a good combination of options. Wordpress Headless and React included as script in the <head> section as <script/><link/> tags.
 
 #### What is wordpress headless?
 It is to use the API-REST included in Wordpress and use this software only CMS, some usefull links:
@@ -16,7 +16,7 @@ It is to use the API-REST included in Wordpress and use this software only CMS, 
 - https://www.smashingmagazine.com/2018/10/headless-wordpress-decoupled/
 - https://www.elegantthemes.com/blog/wordpress/headless-wordpress
 
-## CODE:
+## Including a full react scaffolding:
 Basically this is part of the solution.
 
 **1) HTML**
