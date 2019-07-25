@@ -122,3 +122,6 @@ Take a look of the folder basic and examples with some code ready to be used.
 
 - **Basic**: React + babel + sass + base layout of a website.
 - **Examples**: React + babel + sass + componentes examples.
+
+### SASS LOADER:
+I have written an adaptation of a sass loader https://github.com/medialize/browser-sass/issues/2 in the base file you cand find it in: https://github.com/damiancipolat/React-for-shitty-webs/blob/master/basic/lib/sassLoader.js
